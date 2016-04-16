@@ -108,7 +108,7 @@ boolean UnicodePreFilter(void* arg, FcitxKeySym sym, unsigned int state,
 
         FcitxCandidateWordSetPageSize(candList, fc->iMaxCandWord);
         FcitxCandidateWordSetChooseAndModifier(candList, DIGIT_STR_CHOOSE,
-                                               FcitxKeyState_Alt);
+                                               FcitxKeyState_Ctrl);
         if (FcitxHotkeyIsHotKey(sym, state,
                                 FcitxConfigPrevPageKey(instance, fc))) {
             if (FcitxCandidateWordGoPrevPage(candList))
